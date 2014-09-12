@@ -2,7 +2,7 @@
 
 const byte bands = 5;
 const byte analogPin = 0, strobePin = 12, resetPin = 13;
-const byte MSGEQ7gndREf = 11, r = 3, g = 5, b = 6, y = 9, w = 10;
+const byte r = 3, g = 5, b = 6, y = 9, w = 10;
 
 int bandPass[bands]; //hold a2d values
 const byte led[bands] = {3, 5, 6, 9, 10};
