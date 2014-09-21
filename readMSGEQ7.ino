@@ -1,13 +1,13 @@
 #include <RunningMedian.h>
 
-const byte bands = 5;
+const byte bands = 5; //# of distinct lights
 const byte analogPin = 0, strobePin = 12, resetPin = 13;
 const byte r = 3, g = 5, b = 6, y = 9, w = 10;
 
 int bandPass[bands]; //hold a2d values
-const byte led[bands] = {3, 5, 6, 9, 10};
+const byte led[bands] = {3, 5, 6, 9, 10}; //transisitor pins
 const byte vMin = 150, sampleSize = 50;
-int v1[bands], v2[bands], v3[bands];
+int v1[bands], v2[bands], v3[bands]; //volume cutoffs
 RunningMedian vSamples[5] = RunningMedian(sampleSize);
 
 void setup(){
